@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.monedas {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 50px; /* Reducir el ancho de la moneda */
+}
+
+.tiradas {
+  position: absolute;
+  top: 5px;
+  left: 95px; /* Ajustar el espacio entre la moneda y las tiradas */
+  width: 40px;
+  height: 40px; /* Ajustar la altura para que sea cuadrada */
+}
+
+.monedas img,
+.tiradas img {
+  width: 100%; /* Asegurar que las imágenes llenen el contenedor */
+  height: 100%; /* Asegurar que las imágenes llenen el contenedor */
+}
+
+.plafon {
+  position: relative;
+  margin: 10px auto 0;
+  text-align: center;
+  width: 720px;
+}
+
+.ruleta {
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto 15px;
+}
+
+.central {
+  position: absolute;
+  left: -150px;
+  right: 0;
+  margin: 0 auto;
+  width: 10px; /* Reducir aún más la anchura */
+  height: 90px; /* Reducir aún más la altura */
+  top: 174px;
+}
+
+
+
+
+
+.img {
+  width: 100%;
+}
+
+.barra1 {
+  background-color: #444444;
+  width: 250px;
+  height: 20px;
+  border-radius: 12px;
+  padding: 4px;
+  margin: 15px auto 10px;
+}
+
+.mi_barra {
+  border-radius: 8px;
+  width: 0;
+  height: 20px;
+  background-color: rgb(30, 9, 122);
+  animation-name: animacionBarra;
+  animation-duration: 0.8s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+.parate {
+  animation-play-state: paused;
+}
+
+@keyframes animacionBarra {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
