@@ -31,32 +31,32 @@ function App() {
 
         const grados = (rotation % 360 + 360) % 360;
         if ((grados >= 0 && grados < 44) || (grados >= 180 && grados < 224)) {
-            setPremio("la casilla de la muerte");
+            setPremio("Piñidka");
             setDinero(0);
             setSituacion(2);
         } else if (grados >= 44 && grados < 91) {
-            setPremio("gana 1 moneda y sigues jugando");
+            setPremio("Piña");
             setDinero(dinero + 1);
             setTiradas(tiradas + 1);
         } else if (grados >= 91 && grados < 135) {
             setDinero(dinero * 2);
-            setPremio(`doblas x2 y ganas ${dinero * 2} monedas `);
+            setPremio("Lychee");
             setSituacion(2);
         
         } else if (grados >= 136 && grados < 179) {
-            setPremio("suma 8 monedas y sigues jugando");
+            setPremio("mango");
             setDinero(dinero + 8);
             setTiradas(tiradas + 1);
         } else if (grados >= 224 && grados < 270) {
-            setPremio("gana 5 monedas y sigues jugando");
+            setPremio("Chocolate");
             setDinero(dinero + 5);
             setTiradas(tiradas + 1);
         } else if (grados >= 270 && grados < 314) {
-            setPremio(`multiplica x3 y ganas ${dinero * 3} monedas`);
+            setPremio("idk");
             setDinero(dinero * 3);
             setSituacion(2);
         } else if (grados >= 315 && grados < 359) {
-            setPremio("gana 2 monedas y sigues jugando");
+            setPremio("Kiwi");
             setDinero(dinero + 2);
             setTiradas(tiradas + 1);
         }
@@ -78,7 +78,7 @@ function App() {
                 <div
                     className="ruleta"
                     style={{
-                        backgroundImage: `url('./assets/ruleta.png')`,
+                        backgroundImage: `url('./assets/Ruleta_boba.png')`,
                         transform: `rotate(${rotation}deg)`,
                         transition: "transform 6s cubic-bezier(0.2, 0.8, 0.7, 0.99) 0s",
                     }}
@@ -95,7 +95,7 @@ function App() {
                 </div>
                 {situacion===2 && <h1>No te quedan mas tiradas.Has ganado ${dinero}monedas</h1>}
                 <div className="central">
-                    <img src="./assets/central.png" alt="" />
+                    <img src="./assets/center.png" alt="" />
                 </div>
             </div>
         </>

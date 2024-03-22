@@ -38,12 +38,12 @@
 
 .central {
   position: absolute;
-  left: -150px;
+  left: -500px;
   right: 0;
   margin: 0 auto;
   width: 10px; /* Reducir aún más la anchura */
   height: 90px; /* Reducir aún más la altura */
-  top: 174px;
+  top: 0px;
 }
 
 
