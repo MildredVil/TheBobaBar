@@ -1,0 +1,24 @@
+/* Header.jsx */
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #333; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    display: flex; /* Mostrar en línea */
+    justify-content: space-between; /* Espaciado entre elementos */
+    align-items: center; /* Centrar verticalmente */
+  }
+  
+  /* Estilos para los enlaces de navegación */
+  .nav-link {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    margin-right: 20px; /* Espacio a la derecha entre enlaces */
+  }
+  
+  
+  .logo img{
+    width: 200px;
+  }
+  
