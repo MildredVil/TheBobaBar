@@ -22,3 +22,17 @@ nav {
     width: 200px;
   }
   
+  .imagen-central-container {
+    position: absolute;
+    top: 67%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    z-index: 999; /* Asegura que la imagen esté encima de la ruleta */
+  }
+  
+  .imagen-central {
+    width: 420px; /* Ajusta el ancho según sea necesario */
+    height: 420px; /* Ajusta la altura según sea necesario */
+    /* Estilos adicionales según necesites */
+  }
+  
