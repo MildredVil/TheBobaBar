@@ -1,22 +1,42 @@
-/* Header.jsx */
+.App-background {
+  background-color: lightblue; 
+}
 
-/* Estilos para la barra de navegación */
-nav {
-    background-color: #333; /* Color de fondo */
-    color: white; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interno */
-    display: flex; /* Mostrar en línea */
-    justify-content: space-between; /* Espaciado entre elementos */
-    align-items: center; /* Centrar verticalmente */
-  }
-  
-  /* Estilos para los enlaces de navegación */
-  .nav-link {
-    color: white; /* Color del texto */
-    text-decoration: none; /* Sin subrayado */
-    margin-right: 20px; /* Espacio a la derecha entre enlaces */
-  }
-  
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fec8de;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 100%; /* La imagen ocupará el 100% del alto del contenedor .logo */
+  max-height: 200px; /* Ajusta el tamaño máximo del logo según tu preferencia */
+  width: auto; /* Permite que el ancho se ajuste automáticamente según el tamaño máximo */
+}
+
+.links {
+  display: flex;
+}
+
+.nav-link {
+  margin-left: 20px; /* Espaciado entre los enlaces */
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline; /* Efecto subrayado al pasar el mouse */
+}
+
+
   
   .logo img{
     width: 200px;
@@ -24,8 +44,8 @@ nav {
   
   .imagen-central-container {
     position: absolute;
-    top: 67%;
-    left: 49%;
+    top: 129.7%;
+    left: 49.5%;
     transform: translate(-50%, -50%);
     z-index: 999; /* Asegura que la imagen esté encima de la ruleta */
   }
@@ -35,4 +55,49 @@ nav {
     height: 420px; /* Ajusta la altura según sea necesario */
     /* Estilos adicionales según necesites */
   }
-  
+/* InfiniteBanner.css */
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.infinite-banner {
+  width: 98vw;
+  height: 120px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  background-color: #f0f0f0; /* Color de fondo del banner */
+}
+
+.banner-content {
+  display: inline-block;
+  width: 50vw;
+  padding: 0 20px;
+  animation: slide 10s linear infinite;
+}
+/*..........*/
+
+.image-text-container {
+  display: flex;
+  align-items: center;
+}
+
+.image-container {
+  margin-right: 50px; /* Ajusta este valor para el margen deseado */
+}
+
+.text-container {
+  flex-grow: 1;
+}
+
+.right-aligned-image {
+  max-width: 1000px; /* Ajusta el ancho máximo de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+
